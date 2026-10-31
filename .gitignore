@@ -1,0 +1,7 @@
+.env
+venv/
+__pycache__/
+*.pyc
+invoice_agent.db
+invoice_agent.db-*
+previous_task.json

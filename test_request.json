@@ -1,0 +1,33 @@
+{
+    "configuration":  {
+                          "historyLength":  20,
+                          "acceptedOutputModes":  [
+                                                      "application/vnd.ga5.invoice-action-proposals+json",
+                                                      "application/vnd.ga5.invoice-action-receipts+json"
+                                                  ],
+                          "returnImmediately":  false
+                      },
+    "message":  {
+                    "messageId":  "test-message-002",
+                    "parts":  [
+                                  {
+                                      "mediaType":  "application/vnd.ga5.invoice-claim-batch+json",
+                                      "data":  {
+                                                   "policyRevision":  "policy-1",
+                                                   "batchId":  "different-batch",
+                                                   "packages":  [
+                                                                    {
+                                                                        "documents":  [
+                                                                                          "[INV-001] Invoice from ABC Supplies, invoice ABC-101, amount INR 5000.",
+                                                                                          "[PO-001] Purchase order approved.",
+                                                                                          "[PAY-001] No previous payment found."
+                                                                                      ],
+                                                                        "packageId":  "INV-001"
+                                                                    }
+                                                                ]
+                                               }
+                                  }
+                              ],
+                    "role":  "ROLE_USER"
+                }
+}
