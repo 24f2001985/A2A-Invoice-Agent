@@ -60,6 +60,10 @@ Rationale requirements:
 - Must contain 60–1500 characters.
 - Must explicitly include the exact selected action string.
 - Must cite at least two evidence references exactly as provided, including square brackets.
+IMPORTANT: The rationale MUST contain the exact selected action identifier,
+written exactly as one of:
+settle_invoice, request_approval, hold_invoice, reject_duplicate, open_exception.
+Do not use a variation or natural-language version of the action name.
 
 Return valid JSON only, in this format:
 {"proposals": [...]}
